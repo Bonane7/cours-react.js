@@ -23,23 +23,23 @@ function Countries() {
         {listCountries.map((country) => (
           <div key={country.name.common}>
             {/* Name Country */}
-            <h2>Country: {country.name.common}</h2>
+            <h2 className="text-blue-700 font-bold text-2xl pb-2">Country: {country.name.common}</h2>
             
             {/* Flague */}
             <img src={country.flags.svg} />
-            <p>Population: {country.population}</p>
+            <p className="text-green-400 font-semibold">Population: {country.population}</p>
 
             {/* Language */}
             <div className="flex gap-2">
               {Object.values(country.languages || {}).map((lang) => (
-                <p key={lang}>Langue: {lang}</p>
+                <p className="text-green-400 font-semibold" key={lang}>Langue: {lang}</p>
               ))}
             </div>
 
               {/* borders */}
             <div key={country.borders} className="flex gap-4">
               {country.borders?.map((border) => (
-                <p key={border} className="flex ">
+                <p  key={border} className="flex text-green-400 font-semibold">
                   {border}
                 </p>
               ))}
