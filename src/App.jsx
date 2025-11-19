@@ -1,14 +1,20 @@
 // import Card from "./components/Card"
-import Welcom from "./Welcom"
+// import Conteurs from "./components/Conteurs"
+// import Welcom from "./Welcom"
+// import Users from "./components/Users"
+import Countries from "./components/Countries"
 
 function App() {
 
 
   return (
     <>
+     <Countries />
+     {/* <Conteurs /> */}
       {/* <Card /> */}
-      <Welcom/>
-
+      {/* <Welcom/> */}
+     {/* <Users /> */}
+    
     </>
   )
 }
