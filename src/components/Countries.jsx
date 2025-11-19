@@ -30,6 +30,10 @@ function Countries() {
             <p>Population: {country.population}</p>
 
             {/* Language */}
+            <div className="flex gap-2">
+              {Object.values(country.languages || {}).map((lang) => (
+                <p key={lang}>Langue: {lang}</p>
+              ))}
             </div>
 
               {/* borders */}
